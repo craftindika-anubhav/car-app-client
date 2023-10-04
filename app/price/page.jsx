@@ -1,12 +1,12 @@
 "use client";
+import { useEffect } from "react";
 import Benefits from "@/components/price/Benefits";
 import Hero from "@/components/price/Hero";
 import Membership from "@/components/price/Membership";
 import Testimonials from "@/components/price/Testimonials";
-import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-const page = () => {
+const Page = () => {
   useEffect(() => {
     AOS.init({ duration: 1200 });
   }, []);
@@ -20,4 +20,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
