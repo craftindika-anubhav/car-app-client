@@ -6,7 +6,7 @@ import { TfiCheckBox } from "react-icons/tfi";
 const Membership = () => {
   return (
     <div id="membership" className=" bg-[#323232]  ">
-      <div className="flex justify-evenly  items-center flex-wrap w-[1170px] m-auto  relative">
+      <div className="flex justify-evenly  items-center flex-wrap w-[1170px] max-[1180px]:w-fit m-auto mx-4 relative">
         {data.map((ele, i) => (
           <div
             key={i}

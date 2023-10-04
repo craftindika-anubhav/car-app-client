@@ -207,7 +207,10 @@ const Testimonials = () => {
           </g>
         </svg>
       </div>
-      <h2 className="text-5xl max tracking-wide relative z-10 text-center py-20 w-[600px] max-md:w-[350px] max-md:text-3xl max-[400px]:text-2xl max-[400px]:w-[95%]  m-auto  font-bold">
+      <h2
+        data-aos="fade-down"
+        className="text-5xl max tracking-wide relative z-10 text-center py-20 w-[600px] max-md:w-[350px] max-md:text-3xl max-[400px]:text-2xl max-[400px]:w-[95%]  m-auto  font-bold"
+      >
         What Other Members are Saying
       </h2>
       <div className="ml-3 relative max-sm:mx-10 max-[450px]:mx-2">
@@ -232,31 +235,33 @@ const Testimonials = () => {
           className="mySwiper"
         >
           {testimonials.map((ele, i) => (
-            <SwiperSlide
-              key={i * 43}
-              className=" bg-[#323232]  text-white p-5 rounded-xl boxShadowp cursor-pointer"
-            >
-              <div>
-                <FaQuoteLeft className="text-xl my-3 ml-3 text-[#DF2935]" />
-                <div className="flex items-center  min-h-[160px] max-[]:">
-                  <p className=" ">{ele.content}</p>
+            <SwiperSlide key={i * 43}>
+              <div
+                data-aos="zoom-in-up"
+                className=" bg-[#323232] min-h-[380px] flex flex-col justify-between text-white p-5 rounded-xl boxShadowp cursor-pointer"
+              >
+                <div>
+                  <FaQuoteLeft className="text-xl my-3 ml-3 text-[#DF2935]" />
+                  <div className="flex items-center  min-h-[160px] max-[350px]:text-sm">
+                    <p className=" ">{ele.content}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex border-t-[1px] pt-4 w-[95%] mt-4">
-                <div className="w-[60px] h-[60px] rounded-full relative">
-                  <Image
-                    src={ele.image}
-                    alt={ele.name}
-                    placeholder="blur"
-                    loading="lazy"
-                    fill
-                    sizes="w-full h-full "
-                    className="rounded-full object-cover object-top"
-                  />
-                </div>
-                <div className="ml-3">
-                  <h2>{ele.name}</h2>
-                  <h2>{ele.jop}</h2>
+                <div className="flex border-t-[1px] pt-4 w-[95%] mt-4">
+                  <div className="w-[60px] h-[60px] rounded-full relative">
+                    <Image
+                      src={ele.image}
+                      alt={ele.name}
+                      placeholder="blur"
+                      loading="lazy"
+                      fill
+                      sizes="w-full h-full "
+                      className="rounded-full object-cover object-top"
+                    />
+                  </div>
+                  <div className="ml-3 max-[350px]:text-sm">
+                    <h2>{ele.name}</h2>
+                    <h2>{ele.jop}</h2>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>

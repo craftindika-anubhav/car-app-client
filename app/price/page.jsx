@@ -12,9 +12,9 @@ const page = () => {
   }, []);
   return (
     <div className="max-w-[1500px] overflow-x-hidden m-auto ">
-      {/* <Hero /> */}
-      {/* <Membership /> */}
-      {/* <Benefits /> */}
+      <Hero />
+      <Membership />
+      <Benefits />
       <Testimonials />
     </div>
   );
