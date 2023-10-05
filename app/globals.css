@@ -15,6 +15,10 @@
   scroll-behavior: smooth;
   outline: none;
 }
+.title {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
 .flexCenter {
   @apply flex justify-center items-center;
 }
@@ -34,7 +38,8 @@
 }
 
 .spikes::after,
-.spikesn::after {
+.spikesn::after,
+.spikesblack::after {
   content: "";
   top: 0;
   position: absolute;
@@ -51,6 +56,11 @@
     linear-gradient(225deg, white 25%, transparent 25%);
   background-size: 20px 30px;
 }
+.spikesblack::after {
+  background-image: linear-gradient(135deg, black 25%, transparent 25%),
+    linear-gradient(225deg, black 25%, transparent 25%);
+  background-size: 20px 30px;
+}
 .spikesb::after {
   content: "";
   top: 0;
@@ -62,6 +72,7 @@
   background-image: linear-gradient(135deg, #323232 25%, transparent 25%),
     linear-gradient(225deg, #323232 25%, transparent 25%);
   background-size: 20px 30px;
+  /* background: ; */
 }
 
 .btn {
@@ -123,4 +134,51 @@
   height: 100%;
   background-size: contain;
   /* background: red; */
+}
+
+/* ----------------------Home---------------------- */
+.btn_home,
+.btn_next {
+  background-color: #df2935;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 25px;
+  border: none;
+  text-decoration: none;
+  /* box-shadow: 0px 4px 6px red; */
+  transition: 0.7s ease;
+  cursor: pointer;
+  position: absolute;
+  bottom: 25px;
+  border-color: transparent;
+  background-image: -webkit-linear-gradient(45deg, white 50%, transparent 50%);
+  background-image: linear-gradient(45deg, white 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 600ms ease-in-out;
+  transition: background 600ms ease-in-out;
+  cursor: pointer;
+}
+.btn_home:hover {
+  color: #323232;
+  background-position: 0;
+}
+.btn_next {
+  border: 2px solid #df2935;
+}
+.btn_next:hover {
+  color: #323232;
+  background-position: 0;
+}
+.shadow_inner {
+  transition: 0.3s;
+}
+.shadow_inner:hover {
+  box-shadow: 0px 0px 8px 1px white inset;
+}
+
+.gr {
+  background-image: linear-gradient(to left, #111111 0%, black 100%);
 }
