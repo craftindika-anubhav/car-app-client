@@ -10,11 +10,13 @@ import Price from "./Price";
 import Trending from "./Trending";
 import Brands from "./Brands";
 import CarTypes from "./CarsTypes";
+import Cheaper from "./Cheaper";
 const Home = () => {
   return (
     <div className="max-w-[1500px] m-auto overflow-hidden">
       {/* <Hero /> */}
       {/* <Trending /> */}
+      {/* <Cheaper /> */}
       <CarTypes />
       <Brands />
       <Price />

@@ -1,3 +1,46 @@
+export const cheaper = [
+  {
+    title: "Wholesale",
+    sup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply",
+  },
+  {
+    title: "Dealer Price From Factory",
+    sup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply",
+  },
+  {
+    title: "Used directly with portals",
+    sup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply",
+  },
+  {
+    title: "No commission on sale",
+    sup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply",
+  },
+  {
+    title: "Auction Cars",
+    sup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply",
+  },
+  {
+    title: "Seized Cars",
+    sup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply",
+  },
+  {
+    title: "New models with substantial discounts to gain market share",
+    sup: "Lorem Ipsum is simply dummy text of the ",
+  },
+  {
+    title: "Last year unsold inventory discounts",
+    sup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem ",
+  },
+  {
+    title: "Bulk unsold inventory liquidations",
+    sup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem ",
+  },
+  {
+    title: "Electric incentives discounts",
+    sup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem ",
+  },
+];
+
 export const topCity = [
   "Chevrolet Camaro in Atlanta, GA",
   "Chevrolet Camaro in Houston, TX",
