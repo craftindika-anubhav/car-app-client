@@ -15,6 +15,12 @@ const Home = () => {
   return (
     <div className="max-w-[1500px] m-auto overflow-hidden">
       <Hero />
+      <div className="w-full bg-[#191919] ">
+        <h2 className="w-[640px] py-14  text-white m-auto text-5xl text-center ">
+          Get The Car You Want This Week
+        </h2>
+        <Search />
+      </div>
       {/* <Trending /> */}
       {/* <Cheaper /> */}
       <CarTypes />
@@ -24,7 +30,7 @@ const Home = () => {
       <Cities />
       <TopModels />
       <TopCity />
-      <Search />
+      <Search spikes={"spikesb"} />
       <ContactUs />
     </div>
   );

@@ -2,9 +2,9 @@ import React from "react";
 import image from "@/public/images/car.png";
 import Image from "next/image";
 import Form from "./Form";
-const Search = () => {
+const Search = (props) => {
   return (
-    <div className="spikesb">
+    <div className={`${props.spikes} bg-white`}>
       <div className="w-[90%]  m-auto pb-10  pt-20  flexBetween max-[900px]:flex-col">
         <div className="w-1/2 max-[900px]:w-full">
           <h2 className="text-5xl max-[400px]:text-2xl max-[400px]:w-full text-center font-bold text-[#323232]">
