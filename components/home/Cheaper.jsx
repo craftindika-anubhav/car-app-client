@@ -2,10 +2,10 @@ import React from "react";
 import { cheaper } from "./HomeData";
 const Cheaper = () => {
   return (
-    <div className="">
+    <div className="pt-20">
       <div className="flexCenter flex-wrap ">
         <div className="mx-3 w-[500px]">
-          <h2 className=" text-3xl mb-1">
+          <h2 className=" text-3xl max-[500px]:text-xl mb-1">
             Why Do You Get <span className="text-[#DF2935]">Cars Cheaper</span>{" "}
             Using Auto Trading Genius
           </h2>
