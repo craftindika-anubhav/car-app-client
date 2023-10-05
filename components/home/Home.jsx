@@ -14,7 +14,7 @@ import Cheaper from "./Cheaper";
 const Home = () => {
   return (
     <div className="max-w-[1500px] m-auto overflow-hidden">
-      {/* <Hero /> */}
+      <Hero />
       {/* <Trending /> */}
       {/* <Cheaper /> */}
       <CarTypes />

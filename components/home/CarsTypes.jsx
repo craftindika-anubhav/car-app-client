@@ -7,7 +7,7 @@ const CarTypes = () => {
   const [show, setShow] = useState(false);
   return (
     <div
-      className={`bg-[#191919] relative spikesn  duration-300 text-white  overflow-hidden`}
+      className={`bg-[#191919] relative  duration-300 text-white  overflow-hidden`}
     >
       <Cheaper />
       <h2 className="w-[95%]  m-auto flexcenter mt-16 text-center tracking-wider relative z-[1] mb-10 text-5xl max-sm:text-3xl ">

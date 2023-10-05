@@ -6,7 +6,7 @@ const Brands = () => {
   const [show, setShow] = useState(false);
   return (
     <div
-      className={`bg-[#323232] relative spikesn  duration-300 text-white  overflow-hidden`}
+      className={`bg-[#323232] relative   duration-300 text-white  overflow-hidden`}
     >
       <div className=" absolute w-full h-full bottom-0 z-[1] opacity-50 ">
         <svg
