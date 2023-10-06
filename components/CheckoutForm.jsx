@@ -127,7 +127,7 @@ export default function CheckoutForm({ price }) {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: `http://localhost:3000/checkout?price=${price}`,
+        return_url: `${SERVER_DOMAIN}/checkout?price=${price}`,
       },
     });
 
