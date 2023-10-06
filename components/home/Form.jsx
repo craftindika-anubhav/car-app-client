@@ -1,19 +1,88 @@
-"use client";
-import React, { useRef, useState, useEffect } from "react";
+'use client';
+import React, { useState } from 'react';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import { useRouter } from 'next/navigation';
 const Form = (props) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [make, setMake] = useState("");
-  const [model, setModel] = useState("");
-  const [zip, setZip] = useState("");
-  const [year, setYear] = useState("");
+  const SERVER_DOMAIN = process.env.NEXT_PUBLIC_SERVER_DOMAIN;
+  const router = useRouter();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [make, setMake] = useState('');
+  const [model, setModel] = useState('');
+  const [zip, setZip] = useState('');
+  const [year, setYear] = useState('');
+
+  const submitForm = async (e) => {
+    e.preventDefault();
+    if (name && email && make && model && zip && year) {
+      try {
+        let response = axios.post(`${SERVER_DOMAIN}/api/form/submit`, {
+          first_name: name,
+          email: email,
+          make: make,
+          model: model,
+          desired_year: year,
+          zip_code: zip,
+        });
+        toast.info('Submitting!', {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'dark',
+        });
+        response = await response;
+        toast.success('Submitted!', {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'dark',
+        });
+        localStorage.setItem('userid', response.data.id);
+        setTimeout(() => {
+          router.push('/price');
+        }, 1000);
+      } catch (err) {
+        toast.error('Something went wrong!', {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'dark',
+        });
+      }
+    } else {
+      toast.warn('Please fill all the fields!', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'dark',
+      });
+    }
+  };
 
   return (
     <div className=" my-12 ">
+      <ToastContainer />
       <form
         // data-aos="fade-down"
+        onSubmit={submitForm}
         name="form"
-        method="POST"
         acceptCharset="UTF-8"
         className=" max-w-[450px] relative"
       >

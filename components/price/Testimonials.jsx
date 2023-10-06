@@ -1,13 +1,13 @@
-"use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/free-mode";
-import { FreeMode, Navigation } from "swiper/modules";
-import { testimonials } from "./priceData";
-import Image from "next/image";
-import { FaQuoteLeft } from "react-icons/fa";
-import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
+'use client';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import { FreeMode, Navigation } from 'swiper/modules';
+import { testimonials } from './priceData';
+import Image from 'next/image';
+import { FaQuoteLeft } from 'react-icons/fa';
+import { BsArrowRightShort, BsArrowLeftShort } from 'react-icons/bs';
 const Testimonials = () => {
   return (
     <div className=" mt-14 pb-32 overflow-hidden  bg-black spikesn relative text-white">
@@ -16,7 +16,7 @@ const Testimonials = () => {
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
           xmlnsXlink="http://www.w3.org/1999/xlink"
-          xmlnsSvgjs="http://svgjs.dev/svgjs"
+          xmlnssvgjs="http://svgjs.dev/svgjs"
           viewBox="0 0 800 800"
         >
           <defs>
@@ -228,8 +228,8 @@ const Testimonials = () => {
           freeMode={true}
           loop="true"
           navigation={{
-            prevEl: ".prev",
-            nextEl: ".next",
+            prevEl: '.prev',
+            nextEl: '.next',
           }}
           modules={[FreeMode, Navigation]}
           className="mySwiper"
