@@ -14,6 +14,7 @@ import axios from 'axios';
 
 export default function CheckoutForm({ price }) {
   const SERVER_DOMAIN = process.env.NEXT_PUBLIC_SERVER_DOMAIN;
+  const CLIENT_DOMAIN = process.env.NEXT_PUBLIC_CLIENT_DOMAIN;
   const router = useRouter();
   const stripe = useStripe();
   const elements = useElements();
@@ -127,7 +128,7 @@ export default function CheckoutForm({ price }) {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: `/checkout?price=${price}`,
+        return_url: `${CLIENT_DOMAIN}/checkout?price=${price}`,
       },
     });
 
