@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 export default function Dashboard() {
+  const SERVER_DOMAIN = process.env.NEXT_PUBLIC_SERVER_DOMAIN;
   const router = useRouter();
   const [loading, setLoading] = useState(true);
-  const SERVER_DOMAIN = process.env.NEXT_PUBLIC_SERVER_DOMAIN;
 
   useEffect(() => {
     (async () => {
