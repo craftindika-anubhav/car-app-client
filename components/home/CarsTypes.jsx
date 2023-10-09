@@ -6,7 +6,7 @@ import Brands from "./Brands";
 import wave from "@/public/images/w1.png";
 const CarTypes = () => {
   return (
-    <div className={`bg-[#191919]  relative pb-24 duration-300  text-white  `}>
+    <div className={`bg-[#191919]  relative pb-24 duration-300  text-white   `}>
       <Cheaper />
       <Image
         src={wave}

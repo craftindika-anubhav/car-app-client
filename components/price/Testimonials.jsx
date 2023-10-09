@@ -57,7 +57,7 @@ const Testimonials = () => {
                 <div className=" flexBetween flex-col w-full h-full absolute z-10 p-5">
                   <div className=" ">
                     <FaQuoteLeft className="text-xl my-3 ml-5 text-[#DF2935]" />
-                    <div className="flex items-center max-md:text-sm  min-h-[160px] max-[320px]:text-[13px] ">
+                    <div className="flex items-center text-lg max-md:text-sm  min-h-[160px] max-[320px]:text-[13px] ">
                       <p className=" ">{ele.content}</p>
                     </div>
                   </div>

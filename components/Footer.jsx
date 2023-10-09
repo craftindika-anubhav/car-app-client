@@ -1,9 +1,15 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { LuFacebook, LuTwitter, LuInstagram } from "react-icons/lu";
+import ContactUs from "./ContactUs";
 const d = new Date();
 let year = d.getFullYear();
 const Footer = () => {
+  const [showContact, setShowContact] = useState(false);
+  const showContactHandler = () => {
+    setShowContact(!showContact);
+  };
   return (
     <div className="bg-[#323232]  text-white pt-12 pb-6">
       <div className="w-[90%] m-auto">
@@ -28,14 +34,17 @@ const Footer = () => {
               <div className="mb-2 text-[#9FA1A3] hover:text-white duration-200 text-sm">
                 <Link href="#">Home</Link>
               </div>
-              <div className="mb-2 text-[#9FA1A3] hover:text-white duration-200 text-sm">
+              <div className="mb-2  text-[#9FA1A3] hover:text-white duration-200 text-sm">
                 <Link href="#">About Us</Link>
               </div>
             </div>
             <div data-aos="fade-up" className="">
               <h2 className="mb-2 font-medium">Support Us</h2>
-              <div className="mb-2 text-[#9FA1A3] hover:text-white duration-200 text-sm">
-                <Link href="#">Contact Us</Link>
+              <div
+                onClick={showContactHandler}
+                className="mb-2 cursor-pointer text-[#9FA1A3] hover:text-white duration-200 text-sm"
+              >
+                <p>Contact Us</p>
               </div>
               <div className="mb-2 text-[#9FA1A3] hover:text-white duration-200 text-sm">
                 <Link href="#">Support Center</Link>
@@ -74,6 +83,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {showContact && <ContactUs show={showContactHandler} />}
     </div>
   );
 };
