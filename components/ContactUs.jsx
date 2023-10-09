@@ -9,6 +9,15 @@ const ContactUs = (props) => {
 
   return (
     <div className="form flex flex-col  justify-center items-center fixed bg-black opacity-90  text-white  top-0 left-0 w-full h-[100vh] z-[1000]">
+      <div
+        data-aos="fade-down"
+        className="  text-2xl   w-[600px] max-[680px]:w-[90%] flex justify-end    "
+      >
+        <MdCancelPresentation
+          onClick={() => props.show()}
+          className="hover:text-red-600 duration-300 cursor-pointer"
+        />
+      </div>
       <h2 data-aos="fade-down" className="mb-8 text-3xl">
         Contact Us{" "}
       </h2>
@@ -68,15 +77,6 @@ const ContactUs = (props) => {
           <BsSend className="mx-4 text-xl" />
         </button>
       </form>
-      <div
-        data-aos="fade-down"
-        className=" absolute text-2xl  top-24 w-[600px] max-[680px]:w-[90%] flex justify-end    "
-      >
-        <MdCancelPresentation
-          onClick={() => props.show()}
-          className="hover:text-red-600 duration-300 cursor-pointer"
-        />
-      </div>
     </div>
   );
 };
