@@ -61,15 +61,15 @@ const Footer = () => {
           <div className="flex">
             <Link href="#">
               {" "}
-              <LuFacebook className="text-2xl mx-2 hover:text-white" />
+              <LuFacebook className="text-2xl mx-2 hover:text-white hover:scale-110 duration-200" />
             </Link>
             <Link href="#">
               {" "}
-              <LuInstagram className="text-2xl mx-2 hover:text-white" />
+              <LuInstagram className="text-2xl mx-2 hover:text-white hover:scale-110 duration-200" />
             </Link>
             <Link href="#">
               {" "}
-              <LuTwitter className="text-2xl mx-2 hover:text-white" />
+              <LuTwitter className="text-2xl mx-2 hover:text-white hover:scale-110 duration-200" />
             </Link>
           </div>
         </div>

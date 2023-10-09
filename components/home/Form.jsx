@@ -1,17 +1,17 @@
-'use client';
-import React, { useState } from 'react';
-import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
-import { useRouter } from 'next/navigation';
+"use client";
+import React, { useState } from "react";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 const Form = (props) => {
   const SERVER_DOMAIN = process.env.NEXT_PUBLIC_SERVER_DOMAIN;
   const router = useRouter();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [make, setMake] = useState('');
-  const [model, setModel] = useState('');
-  const [zip, setZip] = useState('');
-  const [year, setYear] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [make, setMake] = useState("");
+  const [model, setModel] = useState("");
+  const [zip, setZip] = useState("");
+  const [year, setYear] = useState("");
 
   const submitForm = async (e) => {
     e.preventDefault();
@@ -25,53 +25,53 @@ const Form = (props) => {
           desired_year: year,
           zip_code: zip,
         });
-        toast.info('Submitting!', {
-          position: 'top-right',
+        toast.info("Submitting!", {
+          position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: 'dark',
+          theme: "dark",
         });
         response = await response;
-        toast.success('Submitted!', {
-          position: 'top-right',
+        toast.success("Submitted!", {
+          position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: 'dark',
+          theme: "dark",
         });
-        localStorage.setItem('userid', response.data.id);
+        localStorage.setItem("userid", response.data.id);
         setTimeout(() => {
-          router.push('/price');
+          router.push("/price");
         }, 1000);
       } catch (err) {
-        toast.error('Something went wrong!', {
-          position: 'top-right',
+        toast.error("Something went wrong!", {
+          position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: 'dark',
+          theme: "dark",
         });
       }
     } else {
-      toast.warn('Please fill all the fields!', {
-        position: 'top-right',
+      toast.warn("Please fill all the fields!", {
+        position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: 'dark',
+        theme: "dark",
       });
     }
   };
@@ -80,13 +80,12 @@ const Form = (props) => {
     <div className=" my-12 ">
       <ToastContainer />
       <form
-        // data-aos="fade-down"
         onSubmit={submitForm}
         name="form"
         acceptCharset="UTF-8"
         className=" max-w-[450px] relative"
       >
-        <div className=" mb-6 max-[400px]:mb-5 relative">
+        <div data-aos="fade-up" className=" mb-6 max-[400px]:mb-5 relative">
           <label htmlFor="name" className="ml-1 text-lg max-[400px]:text-base">
             Your Name
           </label>
@@ -101,7 +100,7 @@ const Form = (props) => {
             value={name}
           />
         </div>
-        <div className=" mb-6 max-[400px]:mb-5 relative">
+        <div data-aos="fade-up" className=" mb-6 max-[400px]:mb-5 relative">
           <label htmlFor="email" className="ml-1 text-lg max-[400px]:text-base">
             Your Email
           </label>
@@ -117,7 +116,7 @@ const Form = (props) => {
           />
         </div>
         <div className="flexBetween mb-6 max-[400px]:mb-5">
-          <div className=" relative mr-2">
+          <div data-aos="fade-right" className=" relative mr-2">
             <label
               htmlFor="make"
               className="ml-1 text-lg max-[400px]:text-base"
@@ -135,7 +134,7 @@ const Form = (props) => {
               onChange={(e) => setMake(e.target.value)}
             />
           </div>
-          <div className="  relative ml-2">
+          <div data-aos="fade-left" className="  relative ml-2">
             <label
               htmlFor="model"
               className="ml-1 text-lg max-[400px]:text-base"
@@ -155,7 +154,10 @@ const Form = (props) => {
           </div>
         </div>
         <div className="flexBetween ">
-          <div className=" mb-10 max-[400px]:mb-5 relative mr-2">
+          <div
+            data-aos="fade-right"
+            className=" mb-10 max-[400px]:mb-5 relative mr-2"
+          >
             <label
               htmlFor="year"
               className="ml-1 text-lg max-[400px]:text-base"
@@ -173,7 +175,10 @@ const Form = (props) => {
               onChange={(e) => setYear(e.target.value)}
             />
           </div>
-          <div className=" mb-10 max-[400px]:mb-5 relative ml-2">
+          <div
+            data-aos="fade-left"
+            className=" mb-10 max-[400px]:mb-5 relative ml-2"
+          >
             <label htmlFor="zip" className="ml-1 text-lg max-[400px]:text-base">
               Zip Code
             </label>
@@ -189,11 +194,13 @@ const Form = (props) => {
             />
           </div>
         </div>
-        <button type="submit" value="Send" className="">
-          <div className="btn_next w-full -mb-10 -ml-1 hover:shadow-sm shadow-md shadow-gray-900 duration-500 ">
-            Next
-          </div>
-        </button>
+        <div data-aos="fade-up">
+          <button type="submit" value="Send" className="group ">
+            <div className="btn_next w-full -mb-10 -ml-1  shadow-md shadow-black duration-500 ">
+              Next
+            </div>
+          </button>
+        </div>
       </form>
     </div>
   );

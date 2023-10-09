@@ -3,7 +3,7 @@ import Image from "next/image";
 import image from "@/public/images/Hero.jpg";
 const Hero = () => {
   return (
-    <div className=" w-screen h-[100vh]">
+    <div className=" w-screen h-[100vh] overflow-x-hidden">
       <div className=" w-full h-full relative">
         <Image
           src={image}
@@ -16,17 +16,31 @@ const Hero = () => {
         />
       </div>
       <div className=" absolute z-10 text-white w-full h-full top-0">
-        <div className="h-[25%] ml-10  w-fit  items-center flex justify-center flex-col">
-          <h2 className=" text-4xl my-2 tracking-wide">Auto Trading Genius</h2>
-          <p className="text-xl border-white border-b-[1px] tracking-wide">
+        <div className="h-[20%] max-sm:h-[16%] ml-8 max-sm:ml-4  w-fit   items-center flex justify-center flex-col">
+          <h2
+            data-aos="fade-up"
+            className=" text-2xl max-sm:text-xl tracking-wide"
+          >
+            Auto Trading Genius
+          </h2>
+          <p
+            data-aos="fade-up"
+            className=" text-sm max-sm:text-xs border-white border-b-[1px] mt-[2px] tracking-wide"
+          >
             The Art Of Buying Cars Cheapy
           </p>
         </div>
-        <div className=" m-auto h-[75vh] w-[740px] flexCenter -mt-6  flex-col">
-          <h2 className="text-7xl  text-center ">
+        <div className=" m-auto h-[75vh] w-[740px] max-md:w-[85%] max-sm:w-[95%] flexCenter   flex-col">
+          <h2
+            data-aos="fade-up"
+            className="text-7xl  text-center max-md:text-5xl max-[430px]:text-3xl"
+          >
             Buy Your Dream Car At 70% Less
           </h2>
-          <p className="text-xl text-center mt-4">
+          <p
+            data-aos="fade-up"
+            className="text-xl text-center mt-4 max-md:w-[75%] max-[490px]:w-[90%] max-[430px]:text-base"
+          >
             Find your dream car with us. Wide selection, easy browsing, and
             expert help. Start now!
           </p>

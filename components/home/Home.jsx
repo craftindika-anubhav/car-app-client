@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { useEffect } from "react";
 import Hero from "./Hero";
 import ContactUs from "./ContactUs";
 import Search from "./Search";
@@ -11,26 +12,36 @@ import Trending from "./Trending";
 import Brands from "./Brands";
 import CarTypes from "./CarsTypes";
 import Cheaper from "./Cheaper";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200, once: true });
+  }, []);
   return (
     <div className="max-w-[1500px] m-auto overflow-hidden">
       <Hero />
-      <div className="w-full bg-[#191919] ">
-        <h2 className="w-[640px] py-14  text-white m-auto text-5xl text-center ">
+      <div className="w-full bg-[#191919] shadow-md shadow-black">
+        <h2
+          data-aos="fade-right"
+          className="w-[640px]  max-md:w-[85%] py-14  text-white m-auto text-5xl max-md:text-4xl max-[350px]:text-3xl text-center "
+        >
           Get The Car You Want This Week
         </h2>
-        <Search />
+        <div className=" w-full spikesb">
+          <Search />
+        </div>
       </div>
-      {/* <Trending /> */}
-      {/* <Cheaper /> */}
       <CarTypes />
       <Brands />
+      <Search />
       <Price />
-      <Popular />
+      {/* <Popular /> */}
       <Cities />
-      <TopModels />
       <TopCity />
-      <Search spikes={"spikesb"} />
+      <TopModels />
+
+      <Search />
       <ContactUs />
     </div>
   );

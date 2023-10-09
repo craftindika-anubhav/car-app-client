@@ -69,8 +69,8 @@
   width: 100%;
   height: 30px;
   z-index: 0;
-  background-image: linear-gradient(135deg, #323232 25%, transparent 25%),
-    linear-gradient(225deg, #323232 25%, transparent 25%);
+  background-image: linear-gradient(135deg, #191919 25%, transparent 25%),
+    linear-gradient(225deg, #191919 25%, transparent 25%);
   background-size: 20px 30px;
   /* background: ; */
 }
@@ -98,42 +98,74 @@
 .btn::before {
   right: 0;
 }
-.per:hover .btn::before,
-.per:hover .btn::after {
-  width: 50.2%;
-}
+
 .boxShadow,
 .boxShadowp {
-  transition: 0.5s;
+  transition: 0.3s;
+  margin: 0px 5px;
 }
+
+.boxShadowp {
+  box-shadow: 0px 0px 20px black;
+  transform: scale(1.13);
+}
+
+/* @media (hover: hover) { */
 .boxShadow:hover {
   box-shadow: 0px 0px 20px black;
   transform: scale(1.1);
 }
-.boxShadowp {
-  box-shadow: 0px 0px 20px black;
-  transform: scale(1.1);
-}
+
 .per:nth-child(1):hover,
 .per:nth-child(3):hover,
 .per:nth-child(4):hover {
   z-index: 30;
 }
-.per:nth-child(2) {
+.boxShadow:hover {
+  box-shadow: 0px 0px 20px black;
   transform: scale(1.1);
+}
+.per:hover .btn::before,
+.per:hover .btn::after {
+  width: 50.2%;
+  color: white;
+}
+.per:hover .btnw {
+  color: white;
+  z-index: 10;
+}
+/* } */
+
+.per:nth-child(2) {
+  transform: scale(1);
   z-index: 20;
 }
 
-.bg_wave {
-  position: absolute;
-  background-image: url("/images/testimonials/wave.png");
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  /* background: red; */
+@media (max-width: 1128px) {
+  .boxShadowp {
+    box-shadow: 0px 0px 20px black;
+    transform: scale(1);
+  }
+  .per:nth-child(2) {
+    transform: scale(1);
+    order: 1;
+  }
+  .per:nth-child(1) {
+    order: 2;
+  }
+  .per:nth-child(3) {
+    order: 3;
+  }
+  .per:nth-child(4) {
+    order: 4;
+  }
+  .per:nth-child(2) {
+    transform: scale(0.9);
+  }
+  .boxShadowp:hover {
+    box-shadow: 0px 0px 20px black;
+    transform: scale(1.13);
+  }
 }
 
 /* ----------------------Home---------------------- */
@@ -181,4 +213,32 @@
 
 .gr {
   background-image: linear-gradient(to left, #111111 0%, black 100%);
+}
+
+.triangle::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+  border-width: 8px;
+  left: -16px;
+  top: 12px;
+}
+.triangle::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border-radius: 100%;
+  background: black;
+  border: 2px solid white;
+  height: 15px;
+  left: -42px;
+  top: 11px;
+}
+@media (max-width: 430px) {
+  .triangle::before {
+    left: -35px;
+  }
 }

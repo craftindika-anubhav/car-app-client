@@ -564,3 +564,41 @@ export const carType = [
     image: cartype1,
   },
 ];
+
+export const popularSearch = [
+  {
+    title: "Used Muscle Cars",
+    sup: [
+      "Used Dodge Charger for Sale",
+      "Used Ford Mustang for Sale",
+      "Used Chevrolet Camaro for Sale",
+    ],
+  },
+  {
+    title: "Used Cars on a Budget",
+    sup: [
+      "Used Cars Under $1000",
+      "Used Cars Under $2000",
+      "Used Cars Under $5000",
+      "Used Cars Under $10000",
+      "Used Cars Under $15000",
+      "Used Cars Under $20000",
+    ],
+  },
+
+  {
+    title: " Specialty Used Cars",
+    sup: ["Classic Cars for Sale", "Vintage Cars for Sale"],
+  },
+  {
+    title: "Used Supercars",
+    sup: [
+      "Used Mclaren 720s for Sale",
+      "Used Ferrari 458 for Sale",
+      "Used Lamborghini Aventador for Sale",
+      "Used Audi R8 for Sale",
+      "Used Aston Martin DBS for sale",
+      "Used Porche 911 for sale",
+    ],
+  },
+];
