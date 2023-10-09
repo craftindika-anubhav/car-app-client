@@ -19,7 +19,7 @@ const Home = () => {
     AOS.init({ duration: 1200, once: true });
   }, []);
   return (
-    <div className="max-w-[1500px] m-auto overflow-hidden">
+    <div className="max-w-[1500px] m-auto overflow-hidden bg-black">
       <Hero />
       <div className="w-full bg-[#191919] shadow-md shadow-black">
         <h2

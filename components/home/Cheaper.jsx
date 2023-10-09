@@ -4,7 +4,7 @@ import Image from "next/image";
 import wave from "@/public/images/w1.png";
 const Cheaper = () => {
   return (
-    <div className="pt-32  spikesn relative  h-fit pb-10 ">
+    <div className="pt-20  spikesn relative  h-fit pb-10 ">
       <Image
         src={wave}
         alt="wave"
@@ -13,10 +13,10 @@ const Cheaper = () => {
         className=" absolute h-fit w-full -bottom-24 max-[567px]:-bottom-16  object-cover"
       />
       <div className="flexCenter flex-wrap px-20 max-xl:px-0">
-        <div className="mx-3 w-[500px]">
+        <div className="mx-3 w-[500px] max-[819px]:mb-8">
           <h2
             data-aos="fade-right"
-            className=" text-3xl max-[500px]:text-xl mb-1"
+            className=" text-3xl max-[500px]:text-xl mb-1 "
           >
             Why Do You Get <span className="text-[#DF2935]">Cars Cheaper</span>{" "}
             Using Auto Trading Genius
