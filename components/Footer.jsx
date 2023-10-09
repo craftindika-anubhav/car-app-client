@@ -1,8 +1,8 @@
-"use client";
-import Link from "next/link";
-import React, { useState } from "react";
-import { LuFacebook, LuTwitter, LuInstagram } from "react-icons/lu";
-import ContactUs from "./ContactUs";
+'use client';
+import Link from 'next/link';
+import React, { useState } from 'react';
+import { LuFacebook, LuTwitter, LuInstagram } from 'react-icons/lu';
+import ContactUs from './ContactUs';
 const d = new Date();
 let year = d.getFullYear();
 const Footer = () => {
@@ -12,6 +12,7 @@ const Footer = () => {
   };
   return (
     <div className="bg-[#323232]  text-white pt-12 pb-6">
+      {/* absolute bottom-0 w-full */}
       <div className="w-[90%] m-auto">
         <div className="flexBetween max-sm:flex-col max-sm:items-start">
           <div className=" max-sm:mb-4">
@@ -69,15 +70,15 @@ const Footer = () => {
           </div>
           <div className="flex">
             <Link href="#">
-              {" "}
+              {' '}
               <LuFacebook className="text-2xl mx-2 hover:text-white hover:scale-110 duration-200" />
             </Link>
             <Link href="#">
-              {" "}
+              {' '}
               <LuInstagram className="text-2xl mx-2 hover:text-white hover:scale-110 duration-200" />
             </Link>
             <Link href="#">
-              {" "}
+              {' '}
               <LuTwitter className="text-2xl mx-2 hover:text-white hover:scale-110 duration-200" />
             </Link>
           </div>

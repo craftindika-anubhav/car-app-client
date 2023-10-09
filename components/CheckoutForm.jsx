@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import {
   PaymentElement,
   LinkAuthenticationElement,
@@ -20,10 +20,9 @@ export default function CheckoutForm({ price }) {
   const elements = useElements();
   const searchParams = useSearchParams();
 
-  const [email, setEmail] = React.useState('');
-  const [message, setMessage] = React.useState(null);
-  const [isLoading, setIsLoading] = React.useState(false);
-
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     if (!stripe) {
       return;

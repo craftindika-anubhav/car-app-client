@@ -38,10 +38,18 @@ export default function Checkout() {
 
   return (
     <div className="my-10">
-      {clientSecret && (
-        <Elements options={options} stripe={stripePromise}>
-          <CheckoutForm price={price} />
-        </Elements>
+      {clientSecret ? (
+        <div className="min-h-[60vh]">
+          <Elements options={options} stripe={stripePromise}>
+            <CheckoutForm price={price} />
+          </Elements>
+        </div>
+      ) : (
+        <div className="text-center min-h-[60vh] relative">
+          <div className="absolute inset-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="border-t-transparent border-solid animate-spin rounded-full border-blue-400 border-4 h-10 w-10"></div>
+          </div>
+        </div>
       )}
     </div>
   );
