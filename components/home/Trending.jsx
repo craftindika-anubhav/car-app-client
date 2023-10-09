@@ -34,7 +34,7 @@ const Trending = () => {
         </h2>
         <div
           data-aos="fade-up"
-          className=" relative w-full h-[400px] max-[500px]:h-[300px] group overflow-hidden rounded-xl shadow-lg shadow-black"
+          className=" relative w-full h-[400px] max-[500px]:h-[300px] group overflow-hidden rounded-md shadow-lg shadow-black"
         >
           <Image
             src={image}
@@ -43,9 +43,9 @@ const Trending = () => {
             loading="lazy"
             fill
             sizes="w-full h-full"
-            className=" object-cover object-center rounded-xl fixed group-hover:scale-110 duration-300 overflow-hidden "
+            className=" object-cover object-center rounded-md fixed group-hover:scale-110 duration-300 overflow-hidden "
           />
-          <div className="rounded-xl absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
+          <div className="rounded-md absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
           <div className=" text-white absolute top-5 left-5 w-full h-full z-10">
             <h3 className="py-2 text-4xl max-[500px]:text-2xl font-semibold w-fit border-b-[1px] border-white">
               $ 10,000
@@ -60,7 +60,7 @@ const Trending = () => {
             <div
               data-aos="fade-right"
               key={i * 4.2}
-              className={` relative w-[32.8%]  group rounded-lg mt-2 h-[300px] max-lg:h-[250px] max-md:h-[300px] max-[500px]:w-full max-md:w-[49%] ${
+              className={` relative w-[32.8%]  group rounded-md mt-2 h-[300px] max-lg:h-[250px] max-md:h-[300px] max-[500px]:w-full max-md:w-[49%] ${
                 i === 2 && "max-md:w-full"
               } overflow-hidden shadow-lg shadow-black`}
             >
@@ -71,9 +71,9 @@ const Trending = () => {
                 loading="lazy"
                 fill
                 sizes="w-full h-full"
-                className=" object-cover   rounded-lg object-center fixed group-hover:scale-110 duration-300 overflow-hidden "
+                className=" object-cover   rounded-md object-center fixed group-hover:scale-110 duration-300 overflow-hidden "
               />
-              <div className="rounded-lg absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
+              <div className="rounded-md absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
               <div className=" text-white absolute top-5 left-5 w-full h-full z-10">
                 <h3 className="py-2 text-2xl font-semibold w-fit border-b-[1px] border-white">
                   {ele.price}

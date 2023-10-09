@@ -95,87 +95,106 @@ export const topModels = [
   "2016 Toyota Tacoma",
 ];
 
-import image1 from "@/public/images/cities/1.jpg";
+import alb from "@/public/images/cities/alb.png";
+import alt from "@/public/images/cities/alt.png";
+import aus from "@/public/images/cities/aus.png";
+import col from "@/public/images/cities/col.png";
+import deh from "@/public/images/cities/deh.png";
+import forr from "@/public/images/cities/for.png";
+import har from "@/public/images/cities/har.png";
+import hou from "@/public/images/cities/hou.png";
+import las from "@/public/images/cities/las.png";
+import mla from "@/public/images/cities/mla.png";
+import neww from "@/public/images/cities/new.png";
+import pho from "@/public/images/cities/pho.png";
+import sac from "@/public/images/cities/sac.png";
+import spr from "@/public/images/cities/spr.png";
+import tam from "@/public/images/cities/tam.png";
+import ral from "@/public/images/cities/ral.png";
+import mem from "@/public/images/cities/mem.png";
+import fre from "@/public/images/cities/fre.png";
+import bak from "@/public/images/cities/bak.png";
+import spring from "@/public/images/cities/spring.png";
 export const cities = [
   {
     title: "Albany, NY",
-    image: image1,
+    image: alb,
   },
   {
     title: "Atlanta, GA",
-    image: image1,
+    image: alt,
   },
   {
     title: "Austin, TX",
-    image: image1,
+    image: aus,
   },
   {
     title: "Columbus, OH",
-    image: image1,
+    image: col,
   },
   {
     title: "Denver, co",
-    image: image1,
+    image: deh,
   },
   {
     title: "Fort Wayne, IN",
-    image: image1,
+    image: forr,
   },
   {
     title: "Hartford, CT",
-    image: image1,
+    image: har,
   },
   {
     title: "Houston, TX",
-    image: image1,
+    image: hou,
   },
   {
     title: "Las Vegas, NV",
-    image: image1,
+    image: las,
   },
   {
     title: "Mlaml, FLi",
-    image: image1,
+    image: mla,
   },
   {
     title: "New York, NY",
-    image: image1,
+    image: neww,
   },
   {
     title: "Phoenix, AZ",
-    image: image1,
+    image: pho,
   },
   {
     title: "Sacramento, CA",
-    image: image1,
+    image: sac,
   },
   {
     title: "Sprincileld, MA",
-    image: image1,
+    image: spr,
   },
   {
     title: "Tampa, FL",
-    image: image1,
+    image: tam,
   },
   {
     title: "Raleigh, NC",
-    image: image1,
+    image: ral,
   },
   {
     title: "Memphis, TN",
-    image: image1,
+    image: mem,
   },
   {
     title: "Fresno, CA",
-    image: image1,
+    image: fre,
   },
   {
     title: "Bakersfield, CA",
-    image: image1,
+    image: bak,
   },
   {
     title: "Springtield,MO",
-    image: image1,
+    image: spring,
   },
 ];
 
@@ -243,18 +262,84 @@ export const popular = [
 ];
 
 import fr from "@/public/images/brands/ferrarii 1.png";
+import a from "@/public/images/brands/aa.webp";
+import mercedesbenzlogo from "@/public/images/brands/mercedes-benz-logo.webp";
+import landroverlogo from "@/public/images/brands/landroverlogo.webp";
+import acuralogo from "@/public/images/brands/acuralogo.webp";
+import alfa from "@/public/images/brands/alfa.webp";
+import aston from "@/public/images/brands/aston.webp";
+import bentley from "@/public/images/brands/bentley.webp";
+import bmw from "@/public/images/brands/bmw.webp";
+import buick from "@/public/images/brands/buick.webp";
+import chevrolet from "@/public/images/brands/chevrolet.webp";
+import chrysler from "@/public/images/brands/chrysler.webp";
+import cadillac from "@/public/images/brands/cadillac.webp";
+import daewoo from "@/public/images/brands/daewoo.webp";
+import daihatsu from "@/public/images/brands/daihatsu.webp";
+import dodge from "@/public/images/brands/dodge.webp";
+import eagle from "@/public/images/brands/eagle.webp";
+import fiat from "@/public/images/brands/fiat.webp";
+import fisker from "@/public/images/brands/fisker.webp";
+import ford from "@/public/images/brands/ford.webp";
+import freightliner from "@/public/images/brands/freightliner.webp";
+import genesis from "@/public/images/brands/genesis.webp";
+import mini from "@/public/images/brands/mini.webp";
+import nissan from "@/public/images/brands/nissan.webp";
+import mazda from "@/public/images/brands/mazda.webp";
+import panoz from "@/public/images/brands/panoz.webp";
+import mclaren from "@/public/images/brands/mclaren.webp";
+import mercury from "@/public/images/brands/mercury.webp";
+import oldsmobile from "@/public/images/brands/oldsmobile.webp";
+import mitsubishi from "@/public/images/brands/mitsubishi.webp";
+import plymouth from "@/public/images/brands/plymouth.webp";
+import polestar from "@/public/images/brands/polestar.png";
+import pontiac from "@/public/images/brands/pontiac.webp";
+import ram from "@/public/images/brands/ram.webp";
+import porsche from "@/public/images/brands/porsche.webp";
+import geo from "@/public/images/brands/geo.webp";
+import gmc from "@/public/images/brands/gmc.webp";
+import honda from "@/public/images/brands/honda.webp";
+import infiniti from "@/public/images/brands/infiniti.webp";
+import hummer from "@/public/images/brands/hummer.webp";
+import hyundai from "@/public/images/brands/hyundai.webp";
+import isuzu from "@/public/images/brands/isuzu.webp";
+import jaguar from "@/public/images/brands/jaguar.webp";
+import jeep from "@/public/images/brands/jeep.webp";
+import kia from "@/public/images/brands/kia.webp";
+import lamborghini from "@/public/images/brands/lamborghini.webp";
+import lexus from "@/public/images/brands/lexus.webp";
+import lucid from "@/public/images/brands/lucid.webp";
+import lincoln from "@/public/images/brands/lincoln.webp";
+import lotus from "@/public/images/brands/lotus.png";
+import vinfast from "@/public/images/brands/vinfast.webp";
+import volkswagen from "@/public/images/brands/volkswagen.webp";
+import maybach from "@/public/images/brands/maybach.webp";
+import maserati from "@/public/images/brands/maserati.webp";
+import tesla from "@/public/images/brands/tesla.webp";
+import rivian from "@/public/images/brands/rivian.webp";
+import saab from "@/public/images/brands/saab.webp";
+import srt from "@/public/images/brands/srt.png";
+import scion from "@/public/images/brands/scion.webp";
+import smart from "@/public/images/brands/smart.webp";
+import saturn from "@/public/images/brands/saturn.webp";
+import subaru from "@/public/images/brands/subaru.webp";
+import volvo from "@/public/images/brands/volvo.webp";
+import suzuki from "@/public/images/brands/suzuki.webp";
+import toyota from "@/public/images/brands/toyota.webp";
+import rolls from "@/public/images/brands/rolls.webp";
+
 export const brands = [
   {
     title: "Audi",
-    image: fr,
+    image: a,
   },
   {
     title: "Mercedez",
-    image: fr,
+    image: mercedesbenzlogo,
   },
   {
     title: "land rover",
-    image: fr,
+    image: landroverlogo,
   },
   {
     title: "Ferrari",
@@ -262,274 +347,259 @@ export const brands = [
   },
   {
     title: "Acura",
-    image: fr,
+    image: acuralogo,
   },
   {
     title: "Alfa Romeo",
-    image: fr,
+    image: alfa,
   },
   {
     title: "Aston Martin",
-    image: fr,
+    image: aston,
   },
   {
     title: "Bentley",
-    image: fr,
+    image: bentley,
   },
   {
     title: "BMW",
-    image: fr,
+    image: bmw,
   },
   {
     title: "Buick",
-    image: fr,
+    image: buick,
   },
   {
     title: "Chevrolet",
-    image: fr,
+    image: chevrolet,
   },
   {
     title: "Chrysler",
-    image: fr,
+    image: chrysler,
   },
   {
     title: "Cadillac",
-    image: fr,
+    image: cadillac,
   },
   {
     title: "Daewoo",
-    image: fr,
+    image: daewoo,
   },
   {
     title: "Daihatsu",
-    image: fr,
-  },
-  {
-    title: "Chevrolet",
-    image: fr,
-  },
-  {
-    title: "Chrysler",
-    image: fr,
-  },
-  {
-    title: "Cadillac",
-    image: fr,
-  },
-  {
-    title: "Daewoo",
-    image: fr,
-  },
-  {
-    title: "Daihatsu",
-    image: fr,
+    image: daihatsu,
   },
   {
     title: "Dodge",
-    image: fr,
+    image: dodge,
   },
   {
     title: "Eagle",
-    image: fr,
+    image: eagle,
   },
   {
     title: "FIAT",
-    image: fr,
+    image: fiat,
   },
   {
     title: "Fisker",
-    image: fr,
+    image: fisker,
   },
   {
     title: "Ford",
-    image: fr,
+    image: ford,
   },
   {
     title: "Freightliner",
-    image: fr,
+    image: freightliner,
   },
   {
     title: "Genesis",
-    image: fr,
+    image: genesis,
   },
   {
     title: "MINI",
-    image: fr,
+    image: mini,
   },
   {
     title: "Nissan",
-    image: fr,
+    image: nissan,
   },
   {
     title: "MAZDA",
-    image: fr,
+    image: mazda,
   },
   {
     title: "Panoz",
-    image: fr,
+    image: panoz,
   },
   {
     title: "McLaren",
-    image: fr,
+    image: mclaren,
   },
   {
     title: "Mercury",
-    image: fr,
+    image: mercury,
   },
   {
     title: "Oldsmobile",
-    image: fr,
+    image: oldsmobile,
   },
   {
     title: "Mitsubishi",
-    image: fr,
+    image: mitsubishi,
   },
   {
     title: "Plymouth",
-    image: fr,
+    image: plymouth,
   },
   {
     title: "Polestar",
-    image: fr,
+    image: polestar,
   },
   {
     title: "Pontiac",
-    image: fr,
+    image: pontiac,
   },
   {
     title: "Ram",
-    image: fr,
+    image: ram,
   },
   {
     title: "Porsche",
-    image: fr,
+    image: porsche,
   },
   {
     title: "Geo",
-    image: fr,
+    image: geo,
   },
   {
     title: "GMC",
-    image: fr,
+    image: gmc,
   },
   {
     title: "Honda",
-    image: fr,
+    image: honda,
   },
   {
     title: "INFINITI",
-    image: fr,
+    image: infiniti,
   },
   {
     title: "HUMMER",
-    image: fr,
+    image: hummer,
   },
   {
     title: "Hyundai",
-    image: fr,
+    image: hyundai,
   },
   {
     title: "Isuzu",
-    image: fr,
+    image: isuzu,
   },
   {
     title: "Jaguar",
-    image: fr,
+    image: jaguar,
   },
   {
     title: "Jeep",
-    image: fr,
+    image: jeep,
   },
   {
     title: "Kia",
-    image: fr,
+    image: kia,
   },
   {
     title: "Lamborghini",
-    image: fr,
+    image: lamborghini,
   },
   {
     title: "Lexus",
-    image: fr,
+    image: lexus,
   },
   {
     title: "Lucid",
-    image: fr,
+    image: lucid,
   },
   {
     title: "Lincoln",
-    image: fr,
+    image: lincoln,
   },
   {
     title: "Lotus",
-    image: fr,
+    image: lotus,
   },
   {
     title: "VinFast",
-    image: fr,
+    image: vinfast,
   },
   {
     title: "Volkswagen",
-    image: fr,
+    image: volkswagen,
   },
   {
     title: "Maybach",
-    image: fr,
+    image: maybach,
   },
   {
     title: "Maserati",
-    image: fr,
+    image: maserati,
   },
   {
     title: "Tesla",
-    image: fr,
+    image: tesla,
   },
   {
     title: "Rivian",
-    image: fr,
+    image: rivian,
   },
   {
     title: "Saab",
-    image: fr,
+    image: saab,
   },
   {
     title: "SRT",
-    image: fr,
+    image: srt,
   },
   {
     title: "Scion",
-    image: fr,
+    image: scion,
   },
   {
     title: "Smart",
-    image: fr,
+    image: smart,
   },
   {
     title: "Saturn",
-    image: fr,
+    image: saturn,
   },
   {
     title: "Subaru",
-    image: fr,
+    image: subaru,
   },
   {
     title: "Volvo",
-    image: fr,
+    image: volvo,
   },
   {
     title: "Suzuki",
-    image: fr,
+    image: suzuki,
   },
   {
     title: "Toyota",
-    image: fr,
+    image: toyota,
   },
   {
     title: "Rolls-Royce",
-    image: fr,
+    image: rolls,
   },
 ];
 import cartype1 from "@/public/images/carType/Sedan-Car-PNG-Free-Image 1.png";
+import coupes from "@/public/images/carType/coupes.png";
+import conertibles from "@/public/images/carType/conertibles.png";
+import suvs from "@/public/images/carType/suvs.png";
+import trucks from "@/public/images/carType/trucks.png";
+import wagons from "@/public/images/carType/wagons.png";
 export const carType = [
   {
     title: "Sendas",
@@ -537,31 +607,23 @@ export const carType = [
   },
   {
     title: "Coupes",
-    image: cartype1,
+    image: coupes,
   },
   {
     title: "Wagons",
-    image: cartype1,
+    image: wagons,
   },
   {
     title: "Conertibles",
-    image: cartype1,
+    image: conertibles,
   },
   {
     title: "Trucks",
-    image: cartype1,
+    image: trucks,
   },
   {
     title: "SUVs",
-    image: cartype1,
-  },
-  {
-    title: "Trucks",
-    image: cartype1,
-  },
-  {
-    title: "SUVs",
-    image: cartype1,
+    image: suvs,
   },
 ];
 

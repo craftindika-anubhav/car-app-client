@@ -22,7 +22,7 @@ const CarTypes = () => {
         All Cars Types Available
       </h2>
       <div
-        className={`flexCenter w-[90%] max-xl:w-[98%] group  m-auto  pb-8 flex-wrap relative z-[2] overflow-hidden duration-300`}
+        className={`flexCenter w-[80%] max-xl:w-[98%] group  m-auto  pb-8 flex-wrap relative z-[2] overflow-hidden duration-300`}
       >
         {carType.map((ele, i) => (
           <div
@@ -33,10 +33,10 @@ const CarTypes = () => {
             <div className="w-full  block h-16 border-white border-dashed border-2 border-b-0 absolute "></div>
             <div className="w-full h-24 border-red-600  border-2 border-y-0 absolute top-[50%] translate-y-[-50%]"></div>
             <div className="felxCenter mt-10 ">
-              <p className=" tracking-wide italic uppercase w-full     text-white duration-300  -mt-1 mb-0  text-2xl py-3    flexCenter">
+              <p className=" tracking-wide italic  w-full     text-white duration-300  -mt-1 mb-0  text-2xl py-3    flexCenter">
                 {ele.title}
               </p>
-              <div className="w-[200px] h-[120px] relative ">
+              <div className="w-[230px] h-[130px] relative ">
                 <Image
                   src={ele.image}
                   alt={ele.title}

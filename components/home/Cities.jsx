@@ -44,12 +44,12 @@ const Cities = () => {
                 loading="lazy"
                 fill
                 sizes="w-full h-full"
-                className=" object-cover object-center group-hover:scale-110 duration-300 overflow-hidden "
+                className=" object-cover object-center scale-105 group-hover:scale-125 duration-300 overflow-hidden "
               />
-              <p className=" tracking-wide  absolute z-[2] group-hover:-mt-44 duration-300 w-full text-3xl h-full flexCenter">
+              <p className=" tracking-wide  absolute z-[2] group-hover:-mt-44 duration-300 w-full text-2xl h-full flexCenter">
                 {ele.title}
               </p>
-              <dir className="absolute top-0 left-0 h-full w-full  bg-black opacity-25 z-[1]"></dir>
+              <div className="absolute top-0 left-0 h-full w-full  bg-black opacity-40 group-hover:opacity-20 duration-100 z-[1]"></div>
             </div>
           ))}
         </div>

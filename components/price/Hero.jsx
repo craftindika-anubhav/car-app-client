@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import image from "@/public/images/Hero.jpg";
+import image1 from "@/public/images/hero1.jpg";
 import { GiSpiralArrow } from "react-icons/gi";
 import Link from "next/link";
 const Hero = () => {
   return (
     <div className=" w-screen h-[100vh] overflow-x-hidden">
-      <div className=" w-full h-full relative">
+      <div className=" w-full h-full relative max-sm:hidden">
         <Image
           src={image}
           alt="hero image"
@@ -14,8 +15,20 @@ const Hero = () => {
           placeholder="blur"
           loading="lazy"
           fill
-          className=" object-cover object-center"
+          className=" object-cover object-left"
         />
+      </div>
+      <div className=" w-full h-full relative sm:hidden">
+        <Image
+          src={image1}
+          alt="hero image"
+          sizes="w-full h-full"
+          placeholder="blur"
+          loading="lazy"
+          fill
+          className=" object-cover object-left"
+        />
+        <div className=" absolute top-0 h-full w-full left-0 bg-black opacity-50"></div>
       </div>
       <div className=" absolute z-10 text-white w-full h-full top-0">
         <div className="h-[20%] max-sm:h-[16%] ml-8 max-sm:ml-4  w-fit   items-center flex justify-center flex-col">
