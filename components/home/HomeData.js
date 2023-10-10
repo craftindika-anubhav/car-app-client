@@ -153,7 +153,7 @@ export const cities = [
     image: las,
   },
   {
-    title: 'Mlaml, FLi',
+    title: 'Miami, FL',
     image: mla,
   },
   {
