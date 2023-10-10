@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="bg-[#323232]  text-white pt-12 pb-6">
       <div className="w-[90%] m-auto">
         <div className="flexBetween max-sm:flex-col max-sm:items-start">
-          <div className=" max-sm:mb-4">
+          <div className=" max-sm:mb-4 text-center mx-auto md:mx-0">
             <h2
               data-aos="fade-right"
               className=" text-3xl  tracking-wide max-[360px]:text-2xl"
@@ -28,7 +28,7 @@ const Footer = () => {
               The Art Of Buying Cars Cheapy
             </p>
           </div>
-          <div className="text-center my-5 lg:my-2">
+          <div className="text-center my-5 lg:my-2 mx-auto md:mx-0">
             <div className="text-lg">Contact Us at</div>
             <Link
               className="text-xl text-green-500"
@@ -37,7 +37,7 @@ const Footer = () => {
               support@autotradinggenius.com
             </Link>
           </div>
-          <div className="flexBetween">
+          <div className="flexBetween  mx-auto md:mx-0">
             <div data-aos="fade-down" className="mx-10 max-sm:ml-0">
               <h2 className="mb-2 font-medium">Navigation</h2>
               <div className="mb-2 text-[#9FA1A3] hover:text-white duration-200 text-sm">
