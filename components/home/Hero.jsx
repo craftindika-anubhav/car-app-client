@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "next/image";
-import image from "@/public/images/Hero.jpg";
-import image1 from "@/public/images/hero1.jpg";
+import React from 'react';
+import Image from 'next/image';
+import image from '@/public/images/Hero.png';
+import image1 from '@/public/images/Hero2.png';
 const Hero = () => {
   return (
     <div className=" w-screen h-[100vh]  overflow-x-hidden">
@@ -38,7 +38,7 @@ const Hero = () => {
           </h2>
           <p
             data-aos="fade-up"
-            className=" text-sm max-sm:text-xs border-white border-b-[1px] mt-[2px] tracking-wide"
+            className=" text-xs max-sm:text-xs border-white border-b-[1px] mt-[2px] tracking-wide"
           >
             The Art Of Buying Cars Cheapy
           </p>

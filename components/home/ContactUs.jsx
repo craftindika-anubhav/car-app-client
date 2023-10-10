@@ -1,7 +1,11 @@
-import Link from "next/link";
-import React from "react";
-
+'use client';
+import { useState } from 'react';
+import ContactUsForm from '../ContactUs';
 const ContactUs = () => {
+  const [showContact, setShowContact] = useState(false);
+  const showContactHandler = () => {
+    setShowContact(!showContact);
+  };
   return (
     <div className="bg-[#242424] spikesn text-white relative overflow-hidden">
       <div
@@ -15,10 +19,14 @@ const ContactUs = () => {
           We look forward to hearing from you and assisting you with all of your
           car buying needs!
         </p>
-        <Link href="#" className="btn_home font-medium shadow-md shadow-black ">
+        <div
+          onClick={showContactHandler}
+          className="btn_home font-medium shadow-md shadow-black "
+        >
           Contact Us
-        </Link>
+        </div>
       </div>
+      {showContact && <ContactUsForm show={showContactHandler} />}
     </div>
   );
 };

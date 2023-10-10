@@ -1,8 +1,8 @@
-"use client";
-import React, { useState } from "react";
-import { cities } from "./HomeData";
-import Image from "next/image";
-import wave from "@/public/images/w1.png";
+'use client';
+import React, { useState } from 'react';
+import { cities } from './HomeData';
+import Image from 'next/image';
+import wave from '@/public/images/w1.png';
 let l = 0;
 const Cities = () => {
   const [show, setShow] = useState(false);
@@ -14,8 +14,8 @@ const Cities = () => {
         <Image
           src={wave}
           alt="wave"
-          width={"100%"}
-          height={"100%"}
+          width={'100%'}
+          height={'100%'}
           className=" absolute h-fit w-full   -bottom-0  object-cover"
         />
         <h2 className="w-[92%]  m-auto flex items-center mt-16 text-left  tracking-wider relative z-[1] mb-10 text-5xl max-sm:text-3xl ">
@@ -24,8 +24,7 @@ const Cities = () => {
             className="w-12 mr-2 h-[1px] bg-white"
           ></span>
           <p data-aos="fade-right" className="title font-bold text-6xl">
-            {" "}
-            Cities
+            Cities with the most searches
           </p>
         </h2>
         <div
@@ -63,7 +62,7 @@ const Cities = () => {
               setShow(!show);
             }}
           >
-            Show {show ? "Less" : "More"}
+            Show {show ? 'Less' : 'More'}
           </p>
         </div>
       </div>

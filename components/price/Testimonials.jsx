@@ -1,23 +1,23 @@
-"use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/free-mode";
-import { FreeMode, Navigation } from "swiper/modules";
-import { testimonials } from "./priceData";
-import Image from "next/image";
-import { FaQuoteLeft } from "react-icons/fa";
-import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
+'use client';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import { FreeMode, Navigation } from 'swiper/modules';
+import { testimonials } from './priceData';
+import Image from 'next/image';
+import { FaQuoteLeft } from 'react-icons/fa';
+import { BsArrowRightShort, BsArrowLeftShort } from 'react-icons/bs';
 
-import wave from "@/public/images/w1.png";
+import wave from '@/public/images/w1.png';
 const Testimonials = () => {
   return (
     <div className="  pb-32 max-sm:pb-16 overflow-hidden  bg-[#191919]  relative text-white">
       <Image
         src={wave}
         alt="wave"
-        width={"100%"}
-        height={"100%"}
+        width={'100%'}
+        height={'100%'}
         className=" absolute h-fit w-full   bottom-0  object-cover "
       />
       <h2
@@ -41,8 +41,8 @@ const Testimonials = () => {
           freeMode={true}
           loop="true"
           navigation={{
-            prevEl: ".prev",
-            nextEl: ".next",
+            prevEl: '.prev',
+            nextEl: '.next',
           }}
           modules={[FreeMode, Navigation]}
           className="mySwiper "
@@ -73,9 +73,9 @@ const Testimonials = () => {
                         className="rounded-full object-cover object-top"
                       />
                     </div>
-                    <div className="ml-3 max-md:text-sm max-[350px]:text-xs">
+                    <div className="ml-3 max-md:text-sm max-[350px]:text-xs flex items-center">
                       <h2>{ele.name}</h2>
-                      <h2>{ele.jop}</h2>
+                      {/* <h2>{ele.jop}</h2> */}
                     </div>
                   </div>
                 </div>

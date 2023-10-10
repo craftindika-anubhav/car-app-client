@@ -1,9 +1,9 @@
-import React from "react";
-import { carType } from "./HomeData";
-import Image from "next/image";
-import Cheaper from "./Cheaper";
-import Brands from "./Brands";
-import wave from "@/public/images/w1.png";
+import React from 'react';
+import { carType } from './HomeData';
+import Image from 'next/image';
+import Cheaper from './Cheaper';
+import Brands from './Brands';
+import wave from '@/public/images/w1.png';
 const CarTypes = () => {
   return (
     <div className={`bg-[#191919]  relative pb-24 duration-300  text-white   `}>
@@ -11,15 +11,15 @@ const CarTypes = () => {
       <Image
         src={wave}
         alt="wave"
-        width={"100%"}
-        height={"100%"}
+        width={'100%'}
+        height={'100%'}
         className=" absolute h-fit w-full bottom-0  object-cover"
       />
       <h2
         data-aos="fade-left"
         className="w-[95%]  m-auto flexcenter mt-16 text-center tracking-wider relative z-[1] mb-10 text-5xl max-sm:text-3xl "
       >
-        All Cars Types Available
+        All Car Types Available
       </h2>
       <div
         className={`flexCenter w-[80%] max-xl:w-[98%] group  m-auto  pb-8 flex-wrap relative z-[2] overflow-hidden duration-300`}
