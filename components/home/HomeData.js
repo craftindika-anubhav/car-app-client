@@ -5,7 +5,7 @@ export const cheaper = [
   },
   {
     title: 'Dealer Price From Factory',
-    sup: 'Buying directly from factories removes middlemen, ensuring you get the most competitive prices.',
+    sup: 'How to pay virtually the same price as the dealer, ensuring you get the most competitive prices.',
   },
   {
     title: 'Used directly with portals',

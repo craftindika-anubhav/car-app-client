@@ -25,7 +25,7 @@ const Footer = () => {
               data-aos="fade-right"
               className="   mt-[2px] tracking-wide max-[360px]:text-sm text-[#DF2935]"
             >
-              The Art Of Buying Cars Cheapy
+              The Art Of Buying Cars Cheaply
             </p>
           </div>
           <div className="text-center my-5 lg:my-2 mx-auto md:mx-0">
