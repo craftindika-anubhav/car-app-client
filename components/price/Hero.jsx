@@ -42,7 +42,7 @@ const Hero = () => {
             data-aos="fade-up"
             className=" text-sm max-sm:text-xs border-white border-b-[1px] mt-[2px] tracking-wide"
           >
-            The Art Of Buying Cars Cheapy
+            The Art Of Buying Cars Cheaply
           </p>
         </div>
         <div className=" m-auto h-[70vh] w-[740px] max-md:w-[80%] max-sm:w-[90%] text-center flex justify-center items-center -mt-5 max-md:mt-0  flex-col">
