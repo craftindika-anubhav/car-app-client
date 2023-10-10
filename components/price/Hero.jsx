@@ -1,9 +1,9 @@
-import React from "react";
-import Image from "next/image";
-import image from "@/public/images/Hero.jpg";
-import image1 from "@/public/images/hero1.jpg";
-import { GiSpiralArrow } from "react-icons/gi";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
+import image from '@/public/images/Hero.png';
+import image1 from '@/public/images/Hero2.png';
+import { GiSpiralArrow } from 'react-icons/gi';
+import Link from 'next/link';
 const Hero = () => {
   return (
     <div className=" w-screen h-[100vh] overflow-x-hidden">
