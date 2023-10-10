@@ -169,7 +169,7 @@ export const cities = [
     image: sac,
   },
   {
-    title: 'Sprincileld, MA',
+    title: 'Springfield, MA',
     image: spr,
   },
   {
@@ -193,7 +193,7 @@ export const cities = [
     image: bak,
   },
   {
-    title: 'Springtield,MO',
+    title: 'Springfield, MO',
     image: spring,
   },
 ];

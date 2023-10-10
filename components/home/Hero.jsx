@@ -43,7 +43,7 @@ const Hero = () => {
             The Art Of Buying Cars Cheaply
           </p>
         </div>
-        <div className=" m-auto h-[75vh] w-[740px] max-md:w-[85%] max-sm:w-[95%] flexCenter   flex-col">
+        <div className=" m-auto h-[75vh] w-[740px] max-md:w-[85%] max-sm:w-[95%] flexCenter   flex-col  px-4 md:px-0">
           <h2
             data-aos="fade-up"
             className="text-7xl  text-center max-md:text-5xl max-[430px]:text-3xl"
